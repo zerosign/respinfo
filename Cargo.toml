@@ -1,0 +1,15 @@
+[package]
+name = "respinfo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "3.1.5"
+dirs = "4.0.0"
+futures = { version = "0.3.21", default-features = false, features = ["std", "async-await", "write-all-vectored", "cfg-target-has-atomic", "unstable"] }
+pulldown-cmark = { git = "https://github.com/raphlinus/pulldown-cmark" }
+reqwest = { version = "0.11.9", default-features = false, features = ["hyper-rustls", "rustls", "trust-dns-resolver", "webpki-roots", "rustls-tls"] }
+thiserror = "1.0.30"
+tokio = { version = "1.17.0", features = ["net", "io-std", "rt-multi-thread", "sync", "time", "fs"] }

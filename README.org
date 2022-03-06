@@ -1,0 +1,20 @@
+* respinfo
+
+** Overview
+
+A cli tools that shows up some information related to :
+- http status code & informations
+- grpc status code & informations
+
+** Development
+
+*** Sources
+
+- [[https://www.iana.org/assignments/http-status-codes/http-status-codes.xml][http-status-codes-iana]]
+- [[https://github.com/grpc/grpc/blob/master/doc/statuscodes.md][grpc status codes]]
+
+** Notes
+
+*** Inspired By
+
+- [[https://github.com/ABGEO/httpinfo][ABGEO/httpinfo]]
